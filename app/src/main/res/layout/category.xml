@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+        <RelativeLayout
+            android:gravity="center_horizontal"
+            android:layout_width="350dp"
+            android:layout_centerHorizontal="true"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!--alphabets-->
+            <RelativeLayout
+               android:layout_alignParentLeft="true"
+                android:layout_width="150dp"
+                android:layout_height="200dp"
+                android:background="@drawable/bg_alphabets"
+                android:id="@+id/alphabets">
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="90dp"
+                        android:layout_gravity="end"
+                        android:id="@+id/imageA"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/ic_a"/>
+
+                <TextView
+                    android:textSize="18sp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerInParent="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/alphabets"
+                    android:shadowColor="@color/text_shadow"
+                    android:shadowDx="1"
+                    android:shadowDy="1"
+                    android:shadowRadius="2"
+                    android:textColor="@color/white"
+                    android:layout_below="@+id/imageA"/>
+
+            </RelativeLayout>
+
+
+            <!--numbers-->
+            <RelativeLayout
+                android:layout_alignParentRight="true"
+                android:layout_width="150dp"
+                android:layout_height="200dp"
+                android:background="@drawable/bg_numbers"
+                android:id="@+id/numbers">
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="90dp"
+                    android:layout_gravity="end"
+                    android:id="@+id/image1"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/ic_one"/>
+
+                <TextView
+                    android:textSize="18sp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerInParent="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/numbers"
+                    android:shadowColor="@color/text_shadow"
+                    android:shadowDx="1"
+                    android:shadowDy="1"
+                    android:shadowRadius="2"
+                    android:textColor="@color/white"
+                    android:layout_below="@+id/image1"/>
+
+
+            </RelativeLayout>
+
+            <!--shapes-->
+            <RelativeLayout
+                android:layout_marginTop="20dp"
+                android:layout_below="@id/alphabets"
+                android:layout_alignParentLeft="true"
+                android:layout_width="150dp"
+                android:layout_height="200dp"
+                android:background="@drawable/bg_shapes"
+                android:id="@+id/shapes">
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="90dp"
+                    android:layout_gravity="end"
+                    android:id="@+id/imageTri"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/triangle"/>
+
+                <TextView
+                    android:textSize="18sp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerInParent="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/shapes"
+                    android:shadowColor="@color/text_shadow"
+                    android:shadowDx="1"
+                    android:shadowDy="1"
+                    android:shadowRadius="2"
+                    android:textColor="@color/white"
+                    android:layout_below="@+id/imageTri"/>
+
+
+            </RelativeLayout>
+
+            <!--Colors-->
+            <RelativeLayout
+                android:layout_marginTop="20dp"
+                android:layout_below="@id/numbers"
+                android:layout_alignParentRight="true"
+                android:layout_width="150dp"
+                android:layout_height="200dp"
+                android:background="@drawable/bg_colors"
+                android:id="@+id/colors">
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="90dp"
+                    android:layout_gravity="end"
+                    android:id="@+id/imageY"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/ic_yellow"/>
+
+                <TextView
+                    android:textSize="18sp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerInParent="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/colors"
+                    android:shadowColor="@color/text_shadow"
+                    android:shadowDx="1"
+                    android:shadowDy="1"
+                    android:shadowRadius="2"
+                    android:textColor="@color/white"
+                    android:layout_below="@+id/imageY"/>
+
+
+            </RelativeLayout>
+
+            <!--Fruits-->
+            <RelativeLayout
+                android:layout_marginTop="20dp"
+                android:layout_below="@id/colors"
+                android:layout_alignParentLeft="true"
+                android:layout_width="150dp"
+                android:layout_height="200dp"
+                android:background="@drawable/bg_fruits"
+                android:id="@+id/fruits">
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="90dp"
+                    android:layout_gravity="end"
+                    android:id="@+id/imageB"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/banana"/>
+
+                <TextView
+                    android:textSize="18sp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerInParent="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/fruits"
+                    android:shadowColor="@color/text_shadow"
+                    android:shadowDx="1"
+                    android:shadowDy="1"
+                    android:shadowRadius="2"
+                    android:textColor="@color/white"
+                    android:layout_below="@+id/imageB"/>
+
+
+            </RelativeLayout>
+
+            <!--Vegetables-->
+            <RelativeLayout
+                android:layout_marginTop="20dp"
+                android:layout_below="@id/colors"
+                android:layout_alignParentRight="true"
+                android:layout_width="150dp"
+                android:layout_height="200dp"
+                android:background="@drawable/bg_vegetables"
+                android:id="@+id/vegetables">
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="90dp"
+                    android:layout_gravity="end"
+                    android:id="@+id/imageC"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/cabbage"/>
+
+                <TextView
+                    android:textSize="18sp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerInParent="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/vegetables"
+                    android:shadowColor="@color/text_shadow"
+                    android:shadowDx="1"
+                    android:shadowDy="1"
+                    android:shadowRadius="2"
+                    android:textColor="@color/white"
+                    android:layout_below="@+id/imageC"/>
+
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+
+</RelativeLayout>

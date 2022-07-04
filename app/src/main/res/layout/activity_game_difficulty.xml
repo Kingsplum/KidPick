@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#72d3f4"
+    tools:context=".GameDifficulty">
+
+    <ImageView
+        android:layout_width="180dp"
+        android:layout_height="100dp"
+        android:src="@drawable/cloud"
+        android:id="@+id/cloud_top"/>
+
+    <ImageView
+        android:layout_width="180dp"
+        android:layout_height="100dp"
+        android:src="@drawable/cloud"
+        android:id="@+id/cloud_mid"/>
+
+    <ImageView
+        android:layout_width="180dp"
+        android:layout_height="100dp"
+        android:src="@drawable/cloud"
+        android:id="@+id/cloud_bot"/>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="10dp">
+
+        <ImageButton
+            android:id="@+id/activity_title"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:fontFamily="@font/virgo"
+            android:onClick="Back"
+             android:background="@drawable/back_btn_bg" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Difficulty"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:fontFamily="@font/virgo"
+            android:layout_centerInParent="true"/>
+
+        <RelativeLayout
+            android:id="@+id/score_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true">
+
+            <TextView
+                android:padding="5dp"
+                android:layout_marginStart="10dp"
+                android:background="#444444"
+                android:id="@+id/point_score"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_centerVertical="true"
+                android:text="0"
+                android:textSize="15sp"
+                android:textColor="@color/white" />
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:scaleType="centerCrop"
+                android:id="@+id/starImg"
+                android:src="@drawable/star_icon"/>
+
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true">
+
+
+            <Button
+                android:id="@+id/easy"
+                android:layout_width="200dp"
+                android:layout_height="60dp"
+                app:backgroundTint="@null"
+                android:text="Easy"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:fontFamily="@font/virgo"
+                android:shadowColor="@color/text_shadow"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="2"
+                android:background="@drawable/btn_bg"/>
+
+
+    <Button
+        android:id="@+id/medium"
+        android:layout_marginTop="20dp"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        app:backgroundTint="@null"
+        android:text="Medium"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:fontFamily="@font/virgo"
+        android:shadowColor="@color/text_shadow"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:shadowRadius="2"
+        android:background="@drawable/btn_bg"
+        android:visibility="gone"/>
+
+        <Button
+            android:id="@+id/lockeMedium"
+            android:layout_marginTop="20dp"
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            app:backgroundTint="@null"
+            android:text="Unlock for 3 stars"
+            android:textStyle="bold"
+            android:textSize="10sp"
+            android:alpha="0.8"
+            android:fontFamily="@font/virgo"
+            android:shadowColor="@color/text_shadow"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:shadowRadius="2"
+            android:background="@drawable/btn_bg"/>
+
+        <Button
+            android:id="@+id/hard"
+            android:layout_marginTop="20dp"
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            app:backgroundTint="@null"
+            android:text="hard"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:fontFamily="@font/virgo"
+            android:shadowColor="@color/text_shadow"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:shadowRadius="2"
+            android:background="@drawable/btn_bg"
+            android:visibility="gone"/>
+
+        <Button
+            android:id="@+id/lockeHard"
+            android:layout_marginTop="20dp"
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            app:backgroundTint="@null"
+            android:text="Unlock for 6 stars"
+            android:textStyle="bold"
+            android:textSize="10sp"
+            android:alpha="0.8"
+            android:fontFamily="@font/virgo"
+            android:shadowColor="@color/text_shadow"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:shadowRadius="2"
+            android:background="@drawable/btn_bg"/>
+
+    </LinearLayout>
+    <com.google.android.material.progressindicator.CircularProgressIndicator
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:indeterminate="true"
+        app:indicatorSize="80dp"
+        app:trackColor="@color/color15"
+        app:indicatorColor="@color/color7"
+        android:visibility="gone"
+        android:id="@+id/progress_circular"
+        android:layout_centerInParent="true" />
+
+    <ImageButton
+        android:layout_alignParentBottom="true"
+        android:onClick="Home"
+        android:id="@+id/skipbtn"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/ic_home"
+        android:gravity="center_horizontal"
+        android:textColor="@color/white"
+        android:layout_marginBottom="10dp"/>
+
+
+</RelativeLayout>

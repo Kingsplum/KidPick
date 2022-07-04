@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeScreen">
+    
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/main_bg"/>
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:src="@drawable/cloud"
+        android:id="@+id/cloud"/>
+
+
+    <ImageView
+        android:id="@+id/cloud2"
+        android:layout_marginTop="100dp"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:src="@drawable/cloud" />
+
+    <ImageView
+        android:id="@+id/cloud3"
+        android:layout_centerInParent="true"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:src="@drawable/cloud" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="300dp"
+        android:src="@drawable/plant"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="10dp"
+        android:rotation="-30"
+        android:layout_marginRight="-180dp"
+        />
+
+    <ImageView
+        android:id="@+id/butt"
+       android:layout_alignParentBottom="true"
+        android:scaleType="centerCrop"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"/>
+
+    <RelativeLayout
+        android:id="@+id/con1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <ImageView
+            android:layout_width="10dp"
+            android:layout_height="100dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/rope"
+            android:layout_centerHorizontal="true"
+            android:visibility="invisible"
+            android:id="@+id/rope" />
+
+        <ImageView
+            android:layout_width="10dp"
+            android:layout_height="100dp"
+            android:scaleType="centerCrop"
+            android:layout_marginRight="50dp"
+            android:src="@drawable/rope"
+            android:layout_below="@+id/rope"
+            android:layout_toLeftOf="@+id/rope"
+            android:id="@+id/tali"
+            android:rotationX="130"
+            android:rotationY="180"/>
+
+        <ImageView
+            android:layout_width="10dp"
+            android:layout_height="100dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/rope"
+            android:layout_below="@+id/rope"
+            android:layout_toRightOf="@+id/rope"
+            android:layout_marginLeft="50dp"
+            android:rotationX="130"
+            android:rotationY="180"/>
+
+        <ImageView
+            android:id="@+id/banner"
+            android:layout_centerHorizontal="true"
+            android:layout_width="300dp"
+            android:layout_height="200dp"
+            android:layout_above="@+id/cont"
+            android:layout_marginBottom="10dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/banner" />
+
+        <LinearLayout
+            android:id="@+id/cont"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rope"
+            android:layout_marginTop="-2dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <Button
+                android:id="@+id/learn"
+                android:layout_width="200dp"
+                android:layout_height="60dp"
+                android:background="@drawable/btn_bg"
+                android:fontFamily="@font/virgo"
+                android:shadowColor="@color/text_shadow"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="2"
+                android:text="Learn"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:backgroundTint="@null" />
+
+            <Button
+                android:id="@+id/play"
+                android:layout_width="200dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/btn_bg"
+                android:fontFamily="@font/virgo"
+                android:shadowColor="@color/text_shadow"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="2"
+                android:text="Play"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:backgroundTint="@null" />
+
+            <RelativeLayout
+                android:layout_width="210dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical">
+
+                <SeekBar
+                    android:id="@+id/volume"
+                    android:layout_width="160dp"
+                    android:layout_height="28dp"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/bar_img"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:progressDrawable="@drawable/custom_seekbar"
+                    android:thumb="@drawable/ic_thumb_svg" />
+
+                <ImageButton
+                    android:id="@+id/mute"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/volume"
+                    android:background="#00000000"
+                    android:onClick="Mute"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/speaker" />
+
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+</RelativeLayout>

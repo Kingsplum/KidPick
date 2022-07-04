@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">KidPick</string>
+    <string name="kidpick">KidPick</string>
+    <string name="alphabets">Alphabets</string>
+    <string name="sub_text_alphabets">Learn Alphabets from A to Z</string>
+    <string name="numbers">Numbers</string>
+    <string name="sub_text_numbers">Learn to count from 1 - 20</string>
+    <string name="shapes">Shapes</string>
+    <string name="sub_text_shapes">Explore the basic Shapes</string>
+    <string name="colors">Colors</string>
+    <string name="sub_text_colors">Explore the basic colors</string>
+    <string name="fruits">Fruits</string>
+    <string name="sub_text_fruits">Learn some fruits.</string>
+    <string name="vegetables">Vegetables</string>
+    <string name="sub_text_vege">Learn some vegetables!</string>
+</resources>

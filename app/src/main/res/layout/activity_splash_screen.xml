@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/container"
+    android:layout_height="match_parent"
+    android:background="#f5c300"
+    tools:context=".SplashScreen">
+
+    <ImageView
+        android:layout_centerHorizontal="true"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/logo"
+        android:src="@drawable/icon"/>
+
+    <TextView
+        android:id="@+id/kid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/kidpick"
+        android:layout_centerInParent="true"
+        android:textSize="20sp"
+        android:fontFamily="@font/virgo"
+        android:textStyle="bold"
+        android:textColor="@color/light_font"
+        android:shadowColor="@color/text_shadow"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:shadowRadius="2"/>
+
+
+</RelativeLayout>
